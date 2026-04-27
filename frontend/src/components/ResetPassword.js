@@ -37,7 +37,7 @@ const ResetPassword = () => {
     }
 
     try {
-      const response = await fetch('https://employee-management-app-gdm5.onrender.com/reset-password', {
+      const response = await fetch('http://a7e3ace08acc74c9fbb3aece457e5a54-1636903953.eu-north-1.elb.amazonaws.com/reset-password', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, newPassword }),
