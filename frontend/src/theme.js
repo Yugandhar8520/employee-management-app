@@ -2,46 +2,94 @@ import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   palette: {
-    mode: 'light',
+    mode: 'dark',
+
     primary: {
-      main: '#1E3C72',
+      main: '#22c55e', // green
     },
     secondary: {
-      main: '#ff9800',
+      main: '#38bdf8', // blue
     },
+
     background: {
-      default: '#f5f7fb',
+      default: '#0f172a',
+      paper: 'rgba(255,255,255,0.05)',
+    },
+
+    text: {
+      primary: '#e5e7eb',
+      secondary: '#9ca3af',
     },
   },
+
+  typography: {
+    fontFamily: `'Poppins', sans-serif`,
+  },
+
   shape: {
     borderRadius: 12,
   },
-  typography: {
-    fontFamily: "'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
-    button: {
-      textTransform: 'none',
-      fontWeight: 700,
-    },
-  },
+
   components: {
-    MuiButton: {
+    MuiCssBaseline: {
       styleOverrides: {
-        root: {
-          borderRadius: 12,
+        body: {
+          background: `
+            radial-gradient(circle at 10% 20%, rgba(34, 197, 94, 0.15), transparent 25%),
+            radial-gradient(circle at 90% 10%, rgba(56, 189, 248, 0.15), transparent 25%),
+            linear-gradient(180deg, #0f172a 0%, #111827 100%)
+          `,
         },
       },
     },
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          borderRadius: 16,
-        },
-      },
-    },
+
     MuiPaper: {
       styleOverrides: {
         root: {
-          borderRadius: 16,
+          backdropFilter: 'blur(12px)',
+          background: 'rgba(255,255,255,0.05)',
+          border: '1px solid rgba(255,255,255,0.08)',
+        },
+      },
+    },
+
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: '8px',
+          textTransform: 'none',
+          fontWeight: 500,
+        },
+        contained: {
+          background: 'linear-gradient(135deg, #22c55e, #38bdf8)',
+          color: '#fff',
+        },
+      },
+    },
+
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          background: 'rgba(15, 23, 42, 0.8)',
+          backdropFilter: 'blur(10px)',
+        },
+      },
+    },
+
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          background: 'rgba(255,255,255,0.05)',
+          backdropFilter: 'blur(12px)',
+        },
+      },
+    },
+
+    MuiTableContainer: {
+      styleOverrides: {
+        root: {
+          background: 'rgba(255,255,255,0.03)',
+          backdropFilter: 'blur(10px)',
         },
       },
     },
