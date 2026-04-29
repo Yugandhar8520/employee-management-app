@@ -1,120 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* 🌍 Theme Variables */
-:root {
-  --bg-main: #0f172a;
-  --bg-soft: #111827;
-  --accent-1: #22c55e;
-  --accent-2: #38bdf8;
-  --text-main: #e5e7eb;
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --border-soft: rgba(255, 255, 255, 0.08);
-}
-
-/* 🔥 Global Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* 🎨 Body */
 body {
+  margin: 0;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background:
-    radial-gradient(circle at 10% 20%, rgba(34, 197, 94, 0.15), transparent 25%),
-    radial-gradient(circle at 90% 10%, rgba(56, 189, 248, 0.15), transparent 25%),
-    linear-gradient(180deg, var(--bg-main) 0%, var(--bg-soft) 100%);
-
-  color: var(--text-main);
+  background: radial-gradient(circle at 10% 20%, rgba(63, 81, 181, 0.08), transparent 25%),
+    radial-gradient(circle at 90% 10%, rgba(255, 152, 0, 0.08), transparent 25%),
+    linear-gradient(180deg, #f7f8fc 0%, #eef1f8 50%, #f9fafc 100%);
+  color: #0f172a;
 }
 
-/* Root container */
-#root {
-  min-height: 100vh;
-  padding: 20px;
+* {
+  box-sizing: border-box;
 }
 
-/* 🪟 Cards / Containers */
-.container, .card, .table-wrapper {
-  background: var(--card-bg);
-  backdrop-filter: blur(12px);
-  border-radius: 12px;
-  padding: 20px;
-  border: 1px solid var(--border-soft);
-  margin-bottom: 20px;
-}
-
-/* 🧾 Table Styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 12px;
-  text-align: left;
-}
-
-th {
-  color: var(--accent-2);
-  font-weight: 600;
-  border-bottom: 1px solid var(--border-soft);
-}
-
-td {
-  border-bottom: 1px solid var(--border-soft);
-}
-
-tr:hover {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-/* 🔘 Buttons */
-button {
-  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
-  border: none;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: 0.3s ease;
-}
-
-button:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-}
-
-/* 📝 Inputs */
-input, select {
-  width: 100%;
-  padding: 10px;
-  margin-top: 8px;
-  margin-bottom: 12px;
-  border-radius: 8px;
-  border: 1px solid var(--border-soft);
-  background: rgba(255,255,255,0.05);
-  color: var(--text-main);
-}
-
-/* 🔗 Links */
-a {
-  color: var(--accent-2);
-  text-decoration: none;
-}
-
-/* 🖱️ Selection */
-::selection {
-  background: rgba(34, 197, 94, 0.3);
-  color: #ffffff;
-}
-
-/* 💻 Code */
 code {
   font-family: 'Poppins', 'Courier New', monospace;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(63, 81, 181, 0.2);
+  color: #0f172a;
 }
