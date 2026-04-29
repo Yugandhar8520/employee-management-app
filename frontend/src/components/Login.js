@@ -38,7 +38,7 @@ const Login = () => {
     setError('');
 
     try {
-      const response = await fetch('http://10.100.89.115/authenticate', {
+      const response = await fetch('http://internal-a7e3ace08acc74c9fbb3aece457e5a54-1874893590.eu-north-1.elb.amazonaws.com/authenticate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
