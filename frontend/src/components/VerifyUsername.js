@@ -16,7 +16,7 @@ const VerifyUsername = () => {
     setSuccess(false);
 
     try {
-      const response = await fetch(`http://afed03a48238a41879fa407eb317e94f-1686458229.eu-north-1.elb.amazonaws.com/verify-username/${username}`, {
+      const response = await fetch(`http://a9e76f6929e5c4d11869b8d84f9ab457-39383325.eu-north-1.elb.amazonaws.com/verify-username/${username}`, {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
       });
