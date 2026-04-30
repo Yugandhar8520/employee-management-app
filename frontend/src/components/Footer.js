@@ -99,7 +99,7 @@ const Footer = () => {
             </Typography>
             <Typography variant="body2">Phone: 6361269492 </Typography>
             <Typography variant="body2" sx={{ marginTop: '0.5rem' }}>
-              Address: 123 Employee St, Suite 100, New York, NY 10001
+              Address: 123 Employee St, Suite 100, India, KA-560078
             </Typography>
           </Grid>
         </Grid>
