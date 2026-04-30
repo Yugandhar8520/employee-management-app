@@ -93,11 +93,11 @@ const Footer = () => {
             </Typography>
             <Typography variant="body2">
               Email:{' '}
-              <Link href="mailto:hoangson091104@gmail.com" color="inherit" sx={{ textDecoration: 'underline', '&:hover': { color: '#f57c00' } }}>
-                hoangson091104@gmail.com
+              <Link href="mailto:yugandharreddy0258@gmail.com" color="inherit" sx={{ textDecoration: 'underline', '&:hover': { color: '#f57c00' } }}>
+                yugandharreddy0258@gmail.com
               </Link>
             </Typography>
-            <Typography variant="body2">Phone: +1 (123) 456-7890</Typography>
+            <Typography variant="body2">Phone: 6361269492 </Typography>
             <Typography variant="body2" sx={{ marginTop: '0.5rem' }}>
               Address: 123 Employee St, Suite 100, New York, NY 10001
             </Typography>
