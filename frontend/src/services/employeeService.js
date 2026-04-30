@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://internal-a7e3ace08acc74c9fbb3aece457e5a54-1874893590.eu-north-1.elb.amazonaws.com/api/employees';
+const API_URL = 'http://afed03a48238a41879fa407eb317e94f-1686458229.eu-north-1.elb.amazonaws.com/api/employees';
 
 // Get all employees
 export const getAllEmployees = async () => {

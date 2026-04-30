@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://backend-service/api/departments';
+const API_URL = 'http://afed03a48238a41879fa407eb317e94f-1686458229.eu-north-1.elb.amazonaws.com/api/departments';
 
 // Get all departments  
 export const getAllDepartments = async () => {
