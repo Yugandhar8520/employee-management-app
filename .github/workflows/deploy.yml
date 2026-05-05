@@ -58,7 +58,12 @@ jobs:
       - name: Update kubeconfig
         run: |
           aws eks update-kubeconfig --name my-cluster --region eu-north-1
-
+      #apply
+        kubectl apply -f frontend-service.yaml
+        kubectl apply -f backend-service.yaml
+        kubectl apply -f frontend-deployment.yaml
+        kubectl apply -f backend-deployment.yaml
+        
       # 🔹 Deploy to Kubernetes
       - name: Deploy to EKS
         run: |
