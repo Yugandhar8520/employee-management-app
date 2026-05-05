@@ -88,7 +88,7 @@ const Footer = () => {
             <Typography variant="body2">
               Project Maintainer:{' '}
               <Link href="https://github.com/hoangsonww" color="inherit" sx={{ textDecoration: 'underline', '&:hover': { color: '#f57c00' } }}>
-                Son Nguyen
+                Yugandhar Reddy
               </Link>
             </Typography>
             <Typography variant="body2">

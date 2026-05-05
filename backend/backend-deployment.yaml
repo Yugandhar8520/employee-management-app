@@ -19,10 +19,19 @@ spec:
             - containerPort: 8080
           env:
             - name: JWT_SECRET
-              value: "abc123"
+              valueFrom:
+                secretKeyRef:
+                 name: app-secret
+                 key: JWT_SECRET
+
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:mysql://database-1.cluuw2gc0stc.eu-north-1.rds.amazonaws.com:3306/employee_db"
+
             - name: SPRING_DATASOURCE_USERNAME
               value: "admin"
+
             - name: SPRING_DATASOURCE_PASSWORD
-              value: "atKSzzsiUlMy73lSVscc"
+              valueFrom:
+                secretKeyRef:
+                  name: app-secret
+                  key: DB_PASSWORD
