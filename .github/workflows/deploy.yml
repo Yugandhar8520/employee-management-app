@@ -61,10 +61,10 @@ jobs:
         
           kubectl get nodes
     
-          kubectl apply -f backend-deployment.yaml
-          kubectl apply -f frontend-deployment.yaml
-          kubectl apply -f backend-service.yaml
-          kubectl apply -f frontend-service.yaml
+          kubectl apply -f backend/backend-deployment.yaml
+          kubectl apply -f frontend/frontend-deployment.yaml
+          kubectl apply -f backend/backend-service.yaml
+          kubectl apply -f frontend/frontend-service.yaml
         
       # 🔹 Deploy to Kubernetes
       - name: Deploy to EKS
